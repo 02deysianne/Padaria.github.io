@@ -1,0 +1,162 @@
+header {
+    background-color: #744c24;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    font-family: cursive;
+}
+
+.logo {
+    width: 9.5%; 
+    height: auto;
+    position: absolute;
+    left: 10%; 
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    flex: 1; 
+    font-family: cursive;
+}
+
+nav {
+    background-color: #9b6b43;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.Paes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.imagem-Paes {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px double #3c0000;
+}
+
+.sub {
+    margin-top: 30px;
+    background-color: #eee;
+    color: #000;
+    border-left: 10px solid #4c0909;
+    padding: 10px;
+    font-weight: 500;
+    display: block;
+    font-style: italic;
+    font-size: 40px;
+    text-align: left; 
+    width: 95%; 
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #744c24;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rodape {
+    font-size: 15px;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo {
+        position: static;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .Paes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .imagem-Paes {
+        height: auto;
+    }
+
+    .sub {
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .rodape {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
